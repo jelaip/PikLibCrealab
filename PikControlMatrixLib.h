@@ -10,8 +10,8 @@ class PikControlMatrix8x8
         Adafruit_NeoPixel *pixels;
         PikControlMatrix8x8(int _pin);
         int Convert(int x,int y);
-        void GenerateSquarre(int x, int y, int taille, int color);
-        void SetPixelByCoord(int x, int y, int color);
+        void GenerateSquarre(int x, int y, int taille, int r,int g,int b);
+        void SetPixelByCoord(int x, int y, int r,int g,int b);
         void Clear();
         int pin;
 

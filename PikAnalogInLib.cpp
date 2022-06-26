@@ -2,7 +2,6 @@
 #include <PikAnalogInLib.h>
 PikAnalogIn::PikAnalogIn(int _pin){
     pin = _pin;
-    //pinMode(pin , INPUT);
 }
 int PikAnalogIn::Value(){
     int value; 
