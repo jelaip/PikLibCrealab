@@ -5,5 +5,5 @@ PikButton::PikButton(int _pin){
     pinMode(pin , INPUT);
 }
 bool PikButton::Value(){
-    digitalRead(pin);
+    return digitalRead(pin);
 }
