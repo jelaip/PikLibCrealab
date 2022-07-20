@@ -15,7 +15,7 @@ int PikControlMatrix8x8::Convert(int x, int y){
   return 7+8*x - y;
 }
 
-void PikControlMatrix8x8::GenerateSquarre(int x, int y, int taille, int r,int g,int b){
+void PikControlMatrix8x8::GenerateSquare(int x, int y, int taille, int r,int g,int b){
     for(int i = 0; i < taille; i++ ){
       pixels->setPixelColor(PikControlMatrix8x8::Convert(x+i,y),pixels->Color(r,g,b));
       pixels->setPixelColor(PikControlMatrix8x8::Convert(x+taille-1,y+i), pixels->Color(r,g,b));
